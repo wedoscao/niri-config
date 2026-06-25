@@ -1,0 +1,9 @@
+[Unit]
+Description=Set a random wallpaper using awww
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /home/wedoscao/.config/niri/scripts/awww-random-wallpaper.sh /home/wedoscao/.config/niri/wallpapers
+
+[Install]
+WantedBy=default.target
