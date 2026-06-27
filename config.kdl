@@ -279,6 +279,8 @@ spawn-at-startup "sh" "-c" "wl-paste --type image --watch cliphist store"
 spawn-at-startup "sh" "-c" "systemctl link --user ~/.config/niri/processes/awww-random-wallpaper.service"
 spawn-at-startup "sh" "-c" "systemctl link --user ~/.config/niri/processes/awww-random-wallpaper.timer"
 spawn-at-startup "sh" "-c" "systemctl enable --user awww-random-wallpaper.timer"
+spawn-at-startup "sh" "-c" "systemctl link --user ~/.config/niri/processes/swayidle.service"
+spawn-at-startup "sh" "-c" "systemctl enable --user swayidle.service"
 spawn-at-startup "sh" "-c" "~/.config/niri/scripts/otd_switcher.sh"
 spawn-at-startup "kitty"
 
@@ -383,7 +385,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "swaylock -f -e --screenshots --clock --indicator --effect-blur 7x5 --effect-vignette 0.5:0.5"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
