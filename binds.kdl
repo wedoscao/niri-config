@@ -3,7 +3,7 @@ binds {
 
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "swaylock -f -e --screenshots --clock --indicator --effect-blur 12x6 --effect-vignette 0.5:0.5"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "/home/wedoscao/.config/niri/scripts/lock.sh";}
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }

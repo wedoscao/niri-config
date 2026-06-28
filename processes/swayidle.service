@@ -6,9 +6,9 @@ Requisite=graphical-session.target
 
 [Service]
 ExecStart=/usr/bin/swayidle -w \
-  timeout 301 'swaylock -f -e --screenshots --clock --indicator --effect-blur 12x6 --effect-vignette 0.5:0.5' \
+  timeout 301 '/home/wedoscao/.config/niri/scripts/lock.sh' \
   timeout 601 'niri msg action power-off-monitors' resume 'niri msg action power-on-monitors' \
-  before-sleep 'swaylock -f -e --screenshots --clock --indicator --effect-blur 12x6 --effect-vignette 0.5:0.5'
+  before-sleep '/home/wedoscao/.config/niri/scripts/lock.sh'
 Restart=on-failure
 
 [Install]
