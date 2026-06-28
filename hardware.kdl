@@ -1,0 +1,19 @@
+input {
+    keyboard {
+        xkb {}
+        numlock
+    }
+    touchpad {
+        tap
+        natural-scroll
+    }
+    mouse {}
+    trackpoint {}
+}
+
+output "eDP-1" {
+    mode "1920x1080@59.999"
+    scale 1.0
+    transform "normal"
+    position x=1280 y=0
+}
