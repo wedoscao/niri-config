@@ -15,3 +15,7 @@ gestures {
         off
     }
 }
+
+environment {
+    "XDG_CURRENT_DESKTOP" "niri"
+}

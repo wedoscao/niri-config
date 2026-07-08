@@ -18,3 +18,5 @@ window-rule {
     default-floating-position x=0 y=0 relative-to="bottom-right" 
     open-focused false 
 }
+
+
