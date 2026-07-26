@@ -20,3 +20,4 @@ fcitx5
 awww
 socat
 opentabletdriver
+elephant-all
