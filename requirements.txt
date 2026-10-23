@@ -2,7 +2,7 @@ niri
 xwayland-satellite
 xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
-dms-shell-niri
+dms-shell
 matugen
 cava
 qt6-multimedia-ffmpeg
