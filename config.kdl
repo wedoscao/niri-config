@@ -18,4 +18,12 @@ gestures {
 
 environment {
     "XDG_CURRENT_DESKTOP" "niri"
+
+    // Required for XWayland applications and some older toolkits
+    "XMODIFIERS" "@im=fcitx"
+    // Forces Qt applications to use the Fcitx5 module
+    "QT_IM_MODULE" "fcitx"
+    // Recommended for some SDL2-based games
+    "SDL_IM_MODULE" "fcitx"
+    // Important: Do NOT set GTK_IM_MODULE globally for Wayland-native apps.
 }
