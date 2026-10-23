@@ -21,3 +21,4 @@ awww
 socat
 opentabletdriver
 elephant-all
+gnome-clocks
